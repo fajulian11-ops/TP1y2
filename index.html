@@ -3,11 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Huellas Seguras — Reporte y adopción de perros</title>
+
+  <!-- ESTRATEGIA SEO 1: Título y meta description -->
+  <title>Huellas Seguras — Reportá y adoptá perros perdidos o maltratados en Tucumán</title>
+  <meta name="description" content="Huellas Seguras conecta vecinos, refugios y veterinarias de Tucumán para reportar, atender y hacer seguimiento de perros perdidos o maltratados, y encontrarles un hogar en adopción.">
+
+  <!-- ESTRATEGIA SEO 2: Meta robots + URL canónica -->
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.huellasseguras.org/">
+
+  <!-- ESTRATEGIA SEO 3: Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Huellas Seguras — Reportá y adoptá perros perdidos o maltratados">
+  <meta property="og:description" content="Sistema comunitario para reportar, atender y hacer seguimiento de perros en situación de calle en Tucumán.">
+  <meta property="og:image" content="https://www.huellasseguras.org/assets/og-image.jpg">
+  <meta property="og:url" content="https://www.huellasseguras.org/">
+  <meta property="og:locale" content="es_AR">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- ESTRATEGIA SEO 4: Datos estructurados (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Huellas Seguras",
+    "description": "Sistema comunitario para reportar, atender y hacer seguimiento de perros perdidos o maltratados, y facilitar su adopción.",
+    "url": "https://www.huellasseguras.org/",
+    "email": "contacto@huellasseguras.org",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "San Miguel de Tucumán",
+      "addressCountry": "AR"
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -104,36 +137,38 @@
         <h2>Casos recientes</h2>
         <div class="lista-casos">
 
+          <!-- ESTRATEGIA SEO 5: alt / aria-label en imágenes -->
           <article class="tarjeta-caso">
-            <div class="imagen-caso"></div>
+            <div class="imagen-caso" role="img" aria-label="Cachorro mestizo perdido en Barrio Norte, Tucumán"></div>
             <span class="estado-caso estado-perdido">Perdido</span>
             <h3>Cachorro mestizo, Barrio Norte</h3>
             <p>Visto por última vez cerca de la plaza principal. Collar rojo, sin chapa.</p>
-            <a href="#" class="enlace-caso">Ver detalle</a>
+            <!-- ESTRATEGIA SEO 6: anchor text descriptivo -->
+            <a href="#" class="enlace-caso">Ver detalle: cachorro mestizo perdido en Barrio Norte</a>
           </article>
 
           <article class="tarjeta-caso">
-            <div class="imagen-caso"></div>
+            <div class="imagen-caso" role="img" aria-label="Hembra adulta en tratamiento veterinario, Villa Mariano Moreno"></div>
             <span class="estado-caso estado-tratamiento">En tratamiento</span>
             <h3>Hembra adulta, Villa Mariano Moreno</h3>
             <p>Rescatada con una pata lastimada. Actualmente en atención veterinaria.</p>
-            <a href="#" class="enlace-caso">Ver detalle</a>
+            <a href="#" class="enlace-caso">Ver detalle: hembra adulta en tratamiento en Villa Mariano Moreno</a>
           </article>
 
           <article class="tarjeta-caso">
-            <div class="imagen-caso"></div>
+            <div class="imagen-caso" role="img" aria-label="Macho joven mestizo, esterilizado, en adopción"></div>
             <span class="estado-caso estado-adopcion">En adopción</span>
             <h3>Macho joven, raza mestiza</h3>
             <p>Ya recuperado y esterilizado. Busca familia con patio.</p>
-            <a href="#" class="enlace-caso">Ver detalle</a>
+            <a href="#" class="enlace-caso">Ver detalle: macho joven mestizo en adopción</a>
           </article>
 
           <article class="tarjeta-caso">
-            <div class="imagen-caso"></div>
+            <div class="imagen-caso" role="img" aria-label="Beagle perdido llamado Toby en zona Yerba Buena"></div>
             <span class="estado-caso estado-perdido">Perdido</span>
             <h3>Beagle, zona Yerba Buena</h3>
             <p>Se escapó durante una tormenta. Responde al nombre "Toby".</p>
-            <a href="#" class="enlace-caso">Ver detalle</a>
+            <a href="#" class="enlace-caso">Ver detalle: beagle Toby perdido en Yerba Buena</a>
           </article>
 
         </div>
