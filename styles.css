@@ -1,30 +1,48 @@
 
 :root {
-  --color-fondo: #EFEBDE;
-  --color-superficie: #FFFFFF;
-  --color-texto: #262B20;
-  --color-primario: #3A5A40;
-  --color-primario-oscuro: #24382A;
-  --color-acento: #A8442E;
-  --color-acento-oscuro: #833423;
-  --color-gris: #6E6853;
-  --color-borde: #DCD5C2;
-
-  --fuente-titulos: 'Bitter', Georgia, serif;
-  --fuente-texto: 'Work Sans', Arial, sans-serif;
-
-  --espacio-1: 0.5rem;
-  --espacio-2: 1rem;
-  --espacio-3: 1.5rem;
-  --espacio-4: 2.5rem;
-  --espacio-5: 4rem;
-
-  --radio-borde: 6px;
-  --sombra-chica: 0 1px 3px rgba(38, 43, 32, 0.10);
-  --sombra-grande: 0 6px 18px rgba(38, 43, 32, 0.14);
-  --ancho-maximo: 1120px;
+  --bs-primary: #3A5A40;
+  --bs-primary-rgb: 58, 90, 64;
+  --bs-secondary: #A8442E;
+  --bs-secondary-rgb: 168, 68, 46;
+  --bs-body-bg: #EFEBDE;
+  --bs-body-color: #262B20;
+  --bs-body-font-family: 'Work Sans', Arial, sans-serif;
+  --bs-border-color: #DCD5C2;
+  --bs-tertiary-bg: #F5F1E6;
+  --bs-border-radius: 6px;
 }
-*,
+
+h1, h2, h3, .navbar-brand, .fw-titulo { font-family: 'Bitter', Georgia, serif; }
+
+a { color: var(--bs-secondary); text-decoration: none; }
+a:hover, a:focus-visible { color: #833423; }
+
+.btn-primary {
+  --bs-btn-bg: var(--bs-secondary);
+  --bs-btn-border-color: var(--bs-secondary);
+  --bs-btn-hover-bg: #833423;
+  --bs-btn-hover-border-color: #833423;
+}
+
+.btn-outline-dark {
+  --bs-btn-color: #24382A;
+  --bs-btn-border-color: #24382A;
+  --bs-btn-hover-bg: #24382A;
+  --bs-btn-hover-border-color: #24382A;
+}
+
+.badge-perdido      { background-color: #F3DCD5; color: #833423; }
+.badge-tratamiento  { background-color: #F1E6C7; color: #7A5A12; }
+.badge-adopcion     { background-color: #DCE8DD; color: #24382A; }
+
+.caso-imagen {
+  height: 120px;
+  border-radius: var(--bs-border-radius) var(--bs-border-radius) 0 0;
+  background: linear-gradient(135deg, var(--bs-primary) 0%, #24382A 100%);
+}
+
+/*
+
 *::before,
 *::after {
   box-sizing: border-box;
@@ -39,12 +57,6 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3 {
-  font-family: var(--fuente-titulos);
-  color: var(--color-primario-oscuro);
-  line-height: 1.2;
-  margin: 0 0 var(--espacio-2);
-}
 
 p {
   margin: 0 0 var(--espacio-2);
@@ -486,3 +498,5 @@ img, svg {
     padding: 0 var(--espacio-2);
   }
 }
+
+*/
