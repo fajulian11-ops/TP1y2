@@ -3,222 +3,230 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- ESTRATEGIA SEO 1: Título y meta description -->
-  <title>Huellas Seguras — Reportá y adoptá perros perdidos o maltratados en Tucumán</title>
-  <meta name="description" content="Huellas Seguras conecta vecinos, refugios y veterinarias de Tucumán para reportar, atender y hacer seguimiento de perros perdidos o maltratados, y encontrarles un hogar en adopción.">
-
-  <!-- ESTRATEGIA SEO 2: Meta robots + URL canónica -->
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.huellasseguras.org/">
-
-  <!-- ESTRATEGIA SEO 3: Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Huellas Seguras — Reportá y adoptá perros perdidos o maltratados">
-  <meta property="og:description" content="Sistema comunitario para reportar, atender y hacer seguimiento de perros en situación de calle en Tucumán.">
-  <meta property="og:image" content="https://www.huellasseguras.org/assets/og-image.jpg">
-  <meta property="og:url" content="https://www.huellasseguras.org/">
-  <meta property="og:locale" content="es_AR">
+  <title>Huellas Seguras — Reporte y adopción de perros</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
 
-  <!-- ESTRATEGIA SEO 4: Datos estructurados (JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Huellas Seguras",
-    "description": "Sistema comunitario para reportar, atender y hacer seguimiento de perros perdidos o maltratados, y facilitar su adopción.",
-    "url": "https://www.huellasseguras.org/",
-    "email": "contacto@huellasseguras.org",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "San Miguel de Tucumán",
-      "addressCountry": "AR"
-    }
-  }
-  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header class="encabezado">
-    <div class="contenedor fila-encabezado">
-      <a href="#inicio" class="logo">
-        <svg class="icono-logo" viewBox="0 0 48 48" aria-hidden="true">
+  <nav class="navbar navbar-expand-md sticky-top bg-body border-bottom">
+    <div class="container">
+      <a href="#inicio" class="navbar-brand d-flex align-items-center gap-2 fw-bold">
+        <svg width="28" height="28" viewBox="0 0 48 48" fill="var(--bs-secondary)" aria-hidden="true">
           <ellipse cx="24" cy="30" rx="11" ry="9"></ellipse>
           <ellipse cx="10" cy="16" rx="4.2" ry="5.4"></ellipse>
           <ellipse cx="20" cy="9" rx="4.2" ry="5.4"></ellipse>
           <ellipse cx="30" cy="9" rx="4.2" ry="5.4"></ellipse>
           <ellipse cx="40" cy="16" rx="4.2" ry="5.4"></ellipse>
         </svg>
-        <span>Huellas Seguras</span>
+        Huellas Seguras
       </a>
 
-      <input type="checkbox" id="menu-check" class="menu-check">
-      <label for="menu-check" class="boton-menu" aria-label="Abrir menú de navegación">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal"
+        aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Abrir menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <nav class="menu-principal" aria-label="Navegación principal">
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#como-funciona">Cómo funciona</a></li>
-          <li><a href="#casos">Casos</a></li>
-          <li><a href="#sumate">Sumate</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+      <div class="collapse navbar-collapse" id="navbarPrincipal">
+        <ul class="navbar-nav ms-auto gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#como-funciona">Cómo funciona</a></li>
+          <li class="nav-item"><a class="nav-link" href="#casos">Casos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sumate">Sumate</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
         </ul>
-      </nav>
+      </div>
     </div>
-  </header>
+  </nav>
 
   <main>
 
-    <section id="inicio" class="portada">
-      <div class="contenedor fila-portada">
-        <div class="texto-portada">
-          <h1>Cada reporte acerca a un perro a su hogar</h1>
-          <p class="texto-destacado">
-            Huellas Seguras conecta a vecinos, refugios y veterinarias para reportar,
-            atender y hacer seguimiento de perros maltratados o perdidos en tu zona.
-          </p>
-          <div class="botones-portada">
-            <a href="#casos" class="boton boton-primario">Reportar un caso</a>
-            <a href="#casos" class="boton boton-secundario">Ver perros en adopción</a>
+    <section id="inicio" class="py-5">
+      <div class="container">
+        <div class="row align-items-center g-5 py-4">
+          <div class="col-lg-7">
+            <h1 class="display-5 fw-bold">Cada reporte acerca a un perro a su hogar</h1>
+            <p class="lead" style="color:#6E6853;">
+              Huellas Seguras conecta a vecinos, refugios y veterinarias para reportar,
+              atender y hacer seguimiento de perros maltratados o perdidos en tu zona.
+            </p>
+            <div class="d-flex flex-wrap gap-2 mt-4">
+              <a href="#casos" class="btn btn-primary btn-lg">Reportar un caso</a>
+              <a href="#casos" class="btn btn-outline-dark btn-lg">Ver perros en adopción</a>
+            </div>
           </div>
-        </div>
 
-        <div class="datos-portada">
-          <div class="dato">
-            <span class="numero-dato">128</span>
-            <span class="etiqueta-dato">casos resueltos este año</span>
-          </div>
-          <div class="dato">
-            <span class="numero-dato">34</span>
-            <span class="etiqueta-dato">refugios conectados</span>
-          </div>
-          <div class="dato">
-            <span class="numero-dato">500+</span>
-            <span class="etiqueta-dato">voluntarios activos</span>
+          <div class="col-lg-5 d-flex flex-column gap-3">
+            <div class="card border-start border-4 shadow-sm" style="border-left-color: var(--bs-primary) !important;">
+              <div class="card-body py-3">
+                <span class="d-block fs-3 fw-bold fw-titulo" style="color:#24382A;">128</span>
+                <span style="color:#6E6853;">casos resueltos este año</span>
+              </div>
+            </div>
+            <div class="card border-start border-4 shadow-sm" style="border-left-color: var(--bs-primary) !important;">
+              <div class="card-body py-3">
+                <span class="d-block fs-3 fw-bold fw-titulo" style="color:#24382A;">34</span>
+                <span style="color:#6E6853;">refugios conectados</span>
+              </div>
+            </div>
+            <div class="card border-start border-4 shadow-sm" style="border-left-color: var(--bs-primary) !important;">
+              <div class="card-body py-3">
+                <span class="d-block fs-3 fw-bold fw-titulo" style="color:#24382A;">500+</span>
+                <span style="color:#6E6853;">voluntarios activos</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="como-funciona" class="funcionamiento">
-      <div class="contenedor">
+    <section id="como-funciona" class="py-5 bg-white border-top border-bottom">
+      <div class="container">
         <h2>Cómo funciona</h2>
-        <ol class="lista-pasos">
-          <li class="paso">
-            <span class="numero-paso">1</span>
-            <h3>Reportá el caso</h3>
-            <p>Cargá la ubicación, el estado del animal y algunas fotos en un formulario simple.</p>
-          </li>
-          <li class="paso">
-            <span class="numero-paso">2</span>
-            <h3>Un refugio lo revisa</h3>
-            <p>Refugios y veterinarias cercanas reciben la alerta y confirman la situación.</p>
-          </li>
-          <li class="paso">
-            <span class="numero-paso">3</span>
-            <h3>Se actúa y hacés seguimiento</h3>
-            <p>Vas viendo cada etapa del caso, desde el rescate hasta la resolución final.</p>
-          </li>
-        </ol>
+        <div class="row g-4 mt-2">
+          <div class="col-md-4">
+            <div class="p-4 border rounded h-100">
+              <span class="d-inline-flex align-items-center justify-content-center rounded-circle text-white fw-bold fw-titulo mb-3"
+                style="width:2.25rem;height:2.25rem;background-color:var(--bs-primary);">1</span>
+              <h3 class="h5">Reportá el caso</h3>
+              <p class="mb-0">Cargá la ubicación, el estado del animal y algunas fotos en un formulario simple.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 border rounded h-100">
+              <span class="d-inline-flex align-items-center justify-content-center rounded-circle text-white fw-bold fw-titulo mb-3"
+                style="width:2.25rem;height:2.25rem;background-color:var(--bs-primary);">2</span>
+              <h3 class="h5">Un refugio lo revisa</h3>
+              <p class="mb-0">Refugios y veterinarias cercanas reciben la alerta y confirman la situación.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 border rounded h-100">
+              <span class="d-inline-flex align-items-center justify-content-center rounded-circle text-white fw-bold fw-titulo mb-3"
+                style="width:2.25rem;height:2.25rem;background-color:var(--bs-primary);">3</span>
+              <h3 class="h5">Se actúa y hacés seguimiento</h3>
+              <p class="mb-0">Vas viendo cada etapa del caso, desde el rescate hasta la resolución final.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="casos" class="casos-recientes">
-      <div class="contenedor">
+    <section id="casos" class="py-5">
+      <div class="container">
         <h2>Casos recientes</h2>
-        <div class="lista-casos">
+        <div class="row g-4 mt-2">
 
-          <!-- ESTRATEGIA SEO 5: alt / aria-label en imágenes -->
-          <article class="tarjeta-caso">
-            <div class="imagen-caso" role="img" aria-label="Cachorro mestizo perdido en Barrio Norte, Tucumán"></div>
-            <span class="estado-caso estado-perdido">Perdido</span>
-            <h3>Cachorro mestizo, Barrio Norte</h3>
-            <p>Visto por última vez cerca de la plaza principal. Collar rojo, sin chapa.</p>
-            <!-- ESTRATEGIA SEO 6: anchor text descriptivo -->
-            <a href="#" class="enlace-caso">Ver detalle: cachorro mestizo perdido en Barrio Norte</a>
-          </article>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <div class="caso-imagen"></div>
+              <div class="card-body">
+                <span class="badge badge-perdido rounded-pill mb-2">Perdido</span>
+                <h3 class="h6">Cachorro mestizo, Barrio Norte</h3>
+                <p class="small mb-2" style="color:#6E6853;">Visto por última vez cerca de la plaza principal. Collar rojo, sin chapa.</p>
+                <a href="#" class="fw-semibold small">Ver detalle</a>
+              </div>
+            </div>
+          </div>
 
-          <article class="tarjeta-caso">
-            <div class="imagen-caso" role="img" aria-label="Hembra adulta en tratamiento veterinario, Villa Mariano Moreno"></div>
-            <span class="estado-caso estado-tratamiento">En tratamiento</span>
-            <h3>Hembra adulta, Villa Mariano Moreno</h3>
-            <p>Rescatada con una pata lastimada. Actualmente en atención veterinaria.</p>
-            <a href="#" class="enlace-caso">Ver detalle: hembra adulta en tratamiento en Villa Mariano Moreno</a>
-          </article>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <div class="caso-imagen"></div>
+              <div class="card-body">
+                <span class="badge badge-tratamiento rounded-pill mb-2">En tratamiento</span>
+                <h3 class="h6">Hembra adulta, Villa Mariano Moreno</h3>
+                <p class="small mb-2" style="color:#6E6853;">Rescatada con una pata lastimada. Actualmente en atención veterinaria.</p>
+                <a href="#" class="fw-semibold small">Ver detalle</a>
+              </div>
+            </div>
+          </div>
 
-          <article class="tarjeta-caso">
-            <div class="imagen-caso" role="img" aria-label="Macho joven mestizo, esterilizado, en adopción"></div>
-            <span class="estado-caso estado-adopcion">En adopción</span>
-            <h3>Macho joven, raza mestiza</h3>
-            <p>Ya recuperado y esterilizado. Busca familia con patio.</p>
-            <a href="#" class="enlace-caso">Ver detalle: macho joven mestizo en adopción</a>
-          </article>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <div class="caso-imagen"></div>
+              <div class="card-body">
+                <span class="badge badge-adopcion rounded-pill mb-2">En adopción</span>
+                <h3 class="h6">Macho joven, raza mestiza</h3>
+                <p class="small mb-2" style="color:#6E6853;">Ya recuperado y esterilizado. Busca familia con patio.</p>
+                <a href="#" class="fw-semibold small">Ver detalle</a>
+              </div>
+            </div>
+          </div>
 
-          <article class="tarjeta-caso">
-            <div class="imagen-caso" role="img" aria-label="Beagle perdido llamado Toby en zona Yerba Buena"></div>
-            <span class="estado-caso estado-perdido">Perdido</span>
-            <h3>Beagle, zona Yerba Buena</h3>
-            <p>Se escapó durante una tormenta. Responde al nombre "Toby".</p>
-            <a href="#" class="enlace-caso">Ver detalle: beagle Toby perdido en Yerba Buena</a>
-          </article>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <div class="caso-imagen"></div>
+              <div class="card-body">
+                <span class="badge badge-perdido rounded-pill mb-2">Perdido</span>
+                <h3 class="h6">Beagle, zona Yerba Buena</h3>
+                <p class="small mb-2" style="color:#6E6853;">Se escapó durante una tormenta. Responde al nombre "Toby".</p>
+                <a href="#" class="fw-semibold small">Ver detalle</a>
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
     </section>
 
-    <section id="sumate" class="participar">
-      <div class="contenedor">
+    <section id="sumate" class="py-5 bg-white border-top">
+      <div class="container">
         <h2>Sumate</h2>
-        <div class="roles">
-          <div class="tarjeta-rol">
-            <h3>Vecino o vecina</h3>
-            <p>Reportá los casos que veas en tu barrio y seguí su estado desde tu cuenta.</p>
+        <div class="row g-4 mt-2">
+          <div class="col-md-4">
+            <div class="p-4 rounded h-100" style="background-color: var(--bs-tertiary-bg); border:1px solid var(--bs-border-color);">
+              <h3 class="h5">Vecino o vecina</h3>
+              <p class="mb-0">Reportá los casos que veas en tu barrio y seguí su estado desde tu cuenta.</p>
+            </div>
           </div>
-          <div class="tarjeta-rol">
-            <h3>Refugio o veterinaria</h3>
-            <p>Sumate a la red para recibir alertas de tu zona y coordinar la atención de cada caso.</p>
+          <div class="col-md-4">
+            <div class="p-4 rounded h-100" style="background-color: var(--bs-tertiary-bg); border:1px solid var(--bs-border-color);">
+              <h3 class="h5">Refugio o veterinaria</h3>
+              <p class="mb-0">Sumate a la red para recibir alertas de tu zona y coordinar la atención de cada caso.</p>
+            </div>
           </div>
-          <div class="tarjeta-rol">
-            <h3>Voluntario o voluntaria</h3>
-            <p>Ayudá con traslados, difusión o el cuidado temporal mientras se resuelve un caso.</p>
+          <div class="col-md-4">
+            <div class="p-4 rounded h-100" style="background-color: var(--bs-tertiary-bg); border:1px solid var(--bs-border-color);">
+              <h3 class="h5">Voluntario o voluntaria</h3>
+              <p class="mb-0">Ayudá con traslados, difusión o el cuidado temporal mientras se resuelve un caso.</p>
+            </div>
           </div>
         </div>
-      </div>
+      </div> 
     </section>
 
   </main>
 
-  <footer id="contacto" class="pie-pagina">
-    <div class="contenedor fila-pie">
-      <div class="marca-pie">
-        <p class="texto-logo">Huellas Seguras</p>
-        <p>Un sistema comunitario para el cuidado y seguimiento de perros en situación de calle.</p>
+  <footer id="contacto" class="text-white pt-5 pb-3" style="background-color:#24382A;">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <p class="fw-titulo fw-bold h5 text-white mb-2">Huellas Seguras</p>
+          <p class="mb-0" style="color:#B7B29B;">Un sistema comunitario para el cuidado y seguimiento de perros en situación de calle.</p>
+        </div>
+        <div class="col-md-4">
+          <h3 class="h6 text-white">Contacto</h3>
+          <p class="mb-1" style="color:#B7B29B;">contacto@huellasseguras.org</p>
+          <p class="mb-0" style="color:#B7B29B;">San Miguel de Tucumán, Argentina</p>
+        </div>
+        <div class="col-md-4">
+          <h3 class="h6 text-white">Enlaces</h3>
+          <ul class="list-unstyled mb-0">
+            <li><a href="#inicio" class="text-white-50">Inicio</a></li>
+            <li><a href="#como-funciona" class="text-white-50">Cómo funciona</a></li>
+            <li><a href="#casos" class="text-white-50">Casos</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="contacto-pie">
-        <h3>Contacto</h3>
-        <p>contacto@huellasseguras.org</p>
-        <p>San Miguel de Tucumán, Argentina</p>
-      </div>
-      <div class="enlaces-pie">
-        <h3>Enlaces</h3>
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#como-funciona">Cómo funciona</a></li>
-          <li><a href="#casos">Casos</a></li>
-        </ul>
-      </div>
+      <p class="text-center small mt-5 mb-0" style="color:#B7B29B;">© 2026 Huellas Seguras. Trabajo práctico académico.</p>
     </div>
-    <p class="derechos-pie">© 2026 Huellas Seguras. Trabajo práctico académico.</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
