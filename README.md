@@ -7,6 +7,11 @@
 ## Descripción breve
 Sitio web para un sistema comunitario que conecta vecinos, refugios y veterinarias para reportar, atender y hacer seguimiento de perros perdidos o maltratados, y facilitar su adopción.
 
+## Nuevas funcionalidades 
+- Se agrego un formulario al botón de "Reportar un caso"
+- Se agrego un buscador dinámico
+- Se remplazarón tarjetas estaticas
+
 ## Tecnologías utilizadas
 - HTML5
 - CSS3 puro (sin frameworks ni librerías)
