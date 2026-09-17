@@ -76,3 +76,27 @@ inputBuscador.addEventListener('keydown', (e) => {
     buscarCasos();
   }
 });
+
+const formReporte = document.getElementById('form-reporte');
+const modalReporteEl = document.getElementById('modalReporte');
+const modalReporte = new bootstrap.Modal(modalReporteEl);
+
+formReporte.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const nuevoCaso = {
+    titulo: document.getElementById('reporte-titulo').value.trim(),
+    estado: document.getElementById('reporte-estado').value,
+    descripcion: document.getElementById('reporte-descripcion').value.trim()
+  };
+
+  casos.unshift(nuevoCaso); 
+
+  inputBuscador.value = ''; 
+  renderCasos(casos);
+
+  formReporte.reset();
+  modalReporte.hide();
+
+  document.getElementById('casos').scrollIntoView({ behavior: 'smooth' });
+});
