@@ -56,7 +56,7 @@
               atender y hacer seguimiento de perros maltratados o perdidos en tu zona.
             </p>
             <div class="d-flex flex-wrap gap-2 mt-4">
-              <a href="#casos" class="btn btn-primary btn-lg">Reportar un caso</a>
+             <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalReporte">Reportar un caso</button>
               <a href="#casos" class="btn btn-outline-dark btn-lg">Ver perros en adopción</a>
             </div>
           </div>
@@ -182,6 +182,37 @@
       <p class="text-center small mt-5 mb-0" style="color:#B7B29B;">© 2026 Huellas Seguras. Trabajo práctico académico.</p>
     </div>
   </footer>
+  <div class="modal fade" id="modalReporte" tabindex="-1" aria-labelledby="modalReporteLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title h5" id="modalReporteLabel">Reportar un caso</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <form id="form-reporte">
+          <div class="mb-3">
+            <label for="reporte-titulo" class="form-label">Título</label>
+            <input type="text" class="form-control" id="reporte-titulo" required placeholder="Ej: Cachorro mestizo, Barrio Norte">
+          </div>
+          <div class="mb-3">
+            <label for="reporte-estado" class="form-label">Estado</label>
+            <select class="form-select" id="reporte-estado" required>
+              <option value="perdido">Perdido</option>
+              <option value="tratamiento">En tratamiento</option>
+              <option value="adopcion">En adopción</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="reporte-descripcion" class="form-label">Descripción</label>
+            <textarea class="form-control" id="reporte-descripcion" rows="3" required placeholder="Detalles del caso..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Publicar reporte</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
